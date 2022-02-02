@@ -9,5 +9,6 @@ object Constants {
     val ALBERT = R.raw.albert
     val FATIMAH = R.raw.fatimah
     val ZIBAH = R.raw.zibah
+    val TAHIRU = R.raw.tahiru
 
 }

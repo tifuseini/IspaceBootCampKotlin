@@ -6,7 +6,7 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="#999966"
-tools:context=".am.allLearners.AmHomeActivity">
+tools:context=".am.AmHomeActivity">
 
 <androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
