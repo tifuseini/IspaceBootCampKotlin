@@ -8,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.ispace.bootcampispace.R
-import org.w3c.dom.Text
 
 class AllLearnersAdapter (
     private val context: Context,
@@ -40,6 +40,10 @@ class AllLearnersAdapter (
 
         Glide
             .with(context)
+            .load(dataPosition.profileImg)
+            .centerCrop()
+            .placeholder(R.drawable.ic_launcher_background)
+            .into(holder.imgUrl)
     }
 
     interface HandleLearnerClick{
