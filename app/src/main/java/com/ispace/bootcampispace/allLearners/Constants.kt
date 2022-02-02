@@ -3,11 +3,11 @@ package com.ispace.bootcampispace.allLearners
 import com.ispace.bootcampispace.R
 
 object Constants {
-    val C = R.raw.claudia
-    val K = R.raw.kwadwo
-    val F = R.raw.femi
-    val A = R.raw.albert
+    val CLAUDIA = R.raw.claudia
+    val KWADWO = R.raw.kwadwo
+    val FEMI = R.raw.femi
+    val ALBERT = R.raw.albert
     val FATIMAH = R.raw.fatimah
-    val Z = R.raw.zibah
+    val ZIBAH = R.raw.zibah
 
 }
