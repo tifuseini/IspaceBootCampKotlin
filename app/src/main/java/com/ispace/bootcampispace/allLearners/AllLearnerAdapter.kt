@@ -2,29 +2,53 @@ package com.ispace.bootcampispace.allLearners
 
 import android.content.Context
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.ispace.bootcampispace.R
+import org.w3c.dom.Text
 
-class AllLearnerAdapter (
+class AllLearnersAdapter (
     private val context: Context,
     private val learnerList:List<AllLearnersDataModel>,
     private val handleLearnClick : HandleLearnerClick
-        ): RecyclerView.Adapter<AllLearnerAdapter.AllLearnersViewHolder>() {
+        ): RecyclerView.Adapter<AllLearnersAdapter.AllLearnersViewHolder>() {
 
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): AllLearnerAdapter.AllLearnersViewHolder {
-        val roorView = LayoutInflater.from(context).inflate(R.layout)
+    ): AllLearnersAdapter.AllLearnersViewHolder {
+        val rootView = LayoutInflater.from(context).inflate(R.layout.learner_row_data,parent,false)
+        return AllLearnersViewHolder(rootView)
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return learnerList.size
     }
 
-    override fun onBindViewHolder(holder: AllLearnerAdapter.AllLearnersViewHolder, position: Int) {
-        TODO("Not yet implemented")
+    override fun onBindViewHolder(holder:AllLearnersViewHolder, position: Int) {
+        val dataPosition = learnerList[position]
+
+        holder.first_name.text = dataPosition.FirstName
+        holder.learnerClick.setOnClickListener{
+            handleLearnClick.onLearnerClick(position)
+        }
+
+        Glide
+            .with(context)
+    }
+
+    interface HandleLearnerClick{
+        fun onLearnerClick(position: Int)
+    }
+
+    class AllLearnersViewHolder(LearnerView:View):RecyclerView.ViewHolder(LearnerView){
+        val imgUrl:ImageView = LearnerView.findViewById(R.id.imageView)
+        val first_name : TextView = LearnerView.findViewById(R.id.textView)
+        val learnerClick:CardView = LearnerView.findViewById(R.id.relativelayoutdesign)
     }
 }
