@@ -1,11 +1,14 @@
 package com.ispace.bootcampispace
 
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Button
+import com.ispace.bootcampispace.am.AmHomeActivity
+import com.ispace.bootcampispace.pm.PmHomeActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,5 +33,14 @@ class MainActivity : AppCompatActivity() {
         pm_section = findViewById(R.id.pm_section)
 
 
+        am_section.setOnClickListener{
+            val intent = Intent(this, AmHomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        pm_section.setOnClickListener {
+            val intent = Intent(this, PmHomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

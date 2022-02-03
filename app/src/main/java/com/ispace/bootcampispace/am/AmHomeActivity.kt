@@ -41,6 +41,20 @@ class AmHomeActivity : AppCompatActivity() {
             )
         )
 
+        learnersList.add(
+            AllLearnersDataModel(
+                "Hephzibah","Emereole","hephzibahemereole@gmail.com","Female",
+                "Student","0279542753","Berekuso", Constants.ZIBAH
+            )
+        )
+
+        learnersList.add(
+            AllLearnersDataModel(
+                "Fatimah ","Adam","adamfatima2557@gmail.com","Female",
+                "Student of the  University for development Studies(UDS)","0201112557","Tema", Constants.FATIMAH
+            )
+        )
+
         val adapta = AllLearnersAdapter(this,learnersList,object :AllLearnersAdapter.HandleLearnerClick{
 
             override fun onLearnerClick(position: Int) {
