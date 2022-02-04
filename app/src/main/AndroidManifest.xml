@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BootcampIspace">
         <activity
-            android:name=".MainActivity"
+            android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +30,10 @@
             android:name=".pm.PmHomeActivity"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            />
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ object SliderSlides {
             ),
             IntroSlide(
                 "Pass the exam",
-                "s"
+                "Build projects to be in demand in the job industry."
             )
         )
     )
