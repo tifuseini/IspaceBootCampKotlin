@@ -1,4 +1,4 @@
-# IspaceBootCampKotlin 28th and 29th Feb
+# IspaceBootCampKotlin 28th and 29th Jan 2022
 
 <p align="center">
   <img src="https://github.com/tifuseini/IspaceBootCampKotlin/blob/main/images/1.jpg" width="350" title="hover text">
