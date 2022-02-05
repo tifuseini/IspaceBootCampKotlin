@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">bootcampIspace</string>
-    <string name="skip_intro" />
-    <string name="next" />
+    <string name="skip_intro">Skip Intro</string>
+    <string name="next">Next</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
 </resources>
